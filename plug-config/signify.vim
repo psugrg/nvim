@@ -9,6 +9,7 @@ let g:signify_sign_show_count = 0
 let g:signify_sign_show_text = 1
 
 " If you like colors instead
-highlight SignifySignAdd ctermfg=black    ctermbg=green                guibg=#00ff00
-highlight SignifySignDelete ctermfg=black ctermbg=red    guifg=#ffffff guibg=#ff0000
-highlight SignifySignChange ctermfg=black ctermbg=yellow guifg=#000000 guibg=#ffff00
+highlight SignColumn ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+highlight SignifySignAdd ctermfg=0 ctermbg=2
+highlight SignifySignDelete ctermfg=0 ctermbg=2 
+highlight SignifySignChange ctermfg=0 ctermbg=9
