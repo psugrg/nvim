@@ -24,9 +24,3 @@ apt-get update && apt-get install lazygit
 
 pip3 install pynvim
 
-# Clone nvim configuration
-mkdir -p $HOME/.config
-pushd $HOME/.config/
-git clone https://github.com/psugrg/nvim.git
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-popd
