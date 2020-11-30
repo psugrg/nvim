@@ -14,7 +14,7 @@ let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#fnamecollapse = 1
 
 "let g:airline_extensions = ['branch', 'hunks', 'coc']
-"let g:airline_extensions = ['branch']
+" let g:airline_extensions = ['branch', 'hunks']
 
 let g:airline#extensions#tabline#buffers_label = ''
 let g:airline#extensions#tabline#tabs_label = ''

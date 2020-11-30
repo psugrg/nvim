@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     " Git support
     Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
     " Project management
     Plug 'mhinz/vim-startify'
     " Searching with FZF (FuzzyFind)
