@@ -30,7 +30,7 @@ let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'ranger' ]
 let g:which_key_map['1'] = [ ':Startify'                  , 'start screen' ]
-let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
+let g:which_key_map['rg'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 "let g:which_key_map['z'] = [ 'Goyo'                      , 'zen' ]
 
@@ -87,7 +87,7 @@ let g:which_key_map.b = {
       \}
 
 " Tabs
-let g:which_key_map.a = {
+let g:which_key_map['T'] = {
       \ 'name' : '+tabs' ,
       \ 'n' : [':tabnext'       , 'next'],
       \ 'p' : [':tabprevious'   , 'previous'],

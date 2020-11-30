@@ -30,8 +30,8 @@ set showtabline=1                       " Show tabs only when there's more than 
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by COC
 set nowritebackup                       " This is recommended by COC
-set updatetime=300                      " Faster completion
-set timeoutlen=500                      " By default timeout length is 1000 ms
+set updatetime=200                      " Faster completion
+set timeoutlen=200                      " By default timeout length is 1000 ms
 set formatoptions-=r                    " Stop newline continuation of comments
 set clipboard=unnamedplus               " Copy paste between Vim and everything else
 "set autochdir                          " Your working directory will always be the same as your working directory
@@ -39,7 +39,7 @@ set spell spelllang=en_us               " Enable spell check for US English
 
 " Change the default Bad Spelling highlight 
 hi clear SpellBad
-hi SpellBad ctermfg=131 cterm=underline
+hi SpellBad ctermfg=131 ctermbg=NONE cterm=underline
 
 " Change the default line numbers color
 hi LineNr ctermfg=DarkGrey ctermbg=NONE cterm=italic
