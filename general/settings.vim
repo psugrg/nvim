@@ -35,7 +35,6 @@ set timeoutlen=200                      " By default timeout length is 1000 ms
 set formatoptions-=r                    " Stop newline continuation of comments
 set clipboard=unnamedplus               " Copy paste between Vim and everything else
 "set autochdir                          " Your working directory will always be the same as your working directory
-set spell spelllang=en_us               " Enable spell check for US English
 
 " Change the default Bad Spelling highlight 
 hi clear SpellBad

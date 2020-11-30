@@ -37,7 +37,7 @@ let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 " Spell check
 let g:which_key_map['sc'] = {
       \ 'name' : '+spell check' ,
-      \ 'e' : [':set spell spellang=en_us'  , 'enable'],
+      \ 'e' : [':set spell spellang=en_us'  , 'enable EN_US'],
       \ 'd' : [':set nospell'               , 'disable'],
       \ 'a' : ['zg'                         , 'add word to dictionary'],
       \ 'n' : [']s'                         , 'next misspelled word'],
