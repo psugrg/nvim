@@ -29,15 +29,14 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'ranger' ]
-let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
+let g:which_key_map['1'] = [ ':Startify'                  , 'start screen' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 "let g:which_key_map['z'] = [ 'Goyo'                      , 'zen' ]
-let g:which_key_map['w'] = [ ':set nospell'               , 'Disable spell-chec' ]
-let g:which_key_map['W'] = [ ':set spell'                 , 'Enable spell-chec' ]
 
-let g:which_key_map.w = {
-      \ 'name' : '+words spell check' ,
+" Spell check
+let g:which_key_map['sc'] = {
+      \ 'name' : '+spell check' ,
       \ 'e' : [':set spell spellang=en_us'  , 'enable'],
       \ 'd' : [':set nospell'               , 'disable'],
       \ 'a' : ['zg'                         , 'add word to dictionary'],
@@ -45,18 +44,19 @@ let g:which_key_map.w = {
       \ 'N' : ['[s'                         , 'previous misspelled word'],
       \ }
 
+" Terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ 't' : [':FloatermNew --wintype=normal --height=6'        , 'terminal'],
+      \ 't' : [':FloatermNew --wintype=normal --height=6'       , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'lazygit'],
-      \ 'p' : [':FloatermNew python3'                            , 'python'],
+      \ 'p' : [':FloatermNew python3'                           , 'python'],
       \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
       \ '`' : [':FloatermToggle'                                , 'toggle'],
       \ 'y' : [':FloatermNew bottom'                            , 'bottom system monitor'],
       \ }
 
-" c is for configuration
+" Configuration
 let g:which_key_map.c = {
       \ 'name' : '+configuration' ,
       \ 'v' : [':e $HOME/.config/nvim/'                           , 'nvim configuration folder'],
@@ -65,16 +65,28 @@ let g:which_key_map.c = {
       \ 'p' : [':PlugInstall'                                     , 'install plugins'],
       \}
 
-" b is for buffers
-let g:which_key_map.b = {
-      \ 'name' : '+buffers' ,
-      \ 'n' : [':bnext'       , 'next'],
-      \ 'p' : [':bprev'       , 'previous'],
-      \ 'd' : [':bdelete'          , 'delete'],
-      \ 'b' : [':enew'        , 'new buffer']
+" Windows
+let g:which_key_map.w = {
+      \ 'name' : '+windows' ,
+      \ 'w' : ['<C-W>v'     , 'vartical split'],
+      \ 'W' : ['<C-W>s'     , 'horisontal split'],
+      \ 'h' : ['<C-W>h'     , 'left'],
+      \ 'j' : ['<C-W>j'     , 'down'],
+      \ 'k' : ['<C-W>k'     , 'up'],
+      \ 'l' : ['<C-W>l'     , 'right'],
+      \ 'd' : [':wq'        , 'close']
       \}
 
-" t is for tabs
+" Buffers
+let g:which_key_map.b = {
+      \ 'name' : '+buffers' ,
+      \ 'n' : [':bnext'     , 'next'],
+      \ 'p' : [':bprev'     , 'previous'],
+      \ 'd' : [':bdelete'   , 'delete'],
+      \ 'b' : [':enew'      , 'new buffer']
+      \}
+
+" Tabs
 let g:which_key_map.a = {
       \ 'name' : '+tabs' ,
       \ 'n' : [':tabnext'       , 'next'],
@@ -84,16 +96,17 @@ let g:which_key_map.a = {
       \ 't' : [':tabnew'        , 'new tab']
       \}
 
-" g is for buffers
+" Git
 let g:which_key_map.g = {
       \ 'name' : '+git' ,
+      \ 'g' : [':FloatermNew lazygit'                           , 'lazygit'],
       \ 'j' : ['<plug>(signify-next-hunk)'       , 'next'],
       \ 'k' : ['<plug>(signify-prev-hunk)'       , 'previous'],
       \ 'J' : ['9999<leader>gJ'                  , '9999<leader>gJ'],
       \ 'K' : ['9999<leader>gk'                  , '9999<leader>gK']
       \}
 
-" s is for search
+" Search
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
       \ '/' : [':History/'     , 'history'],

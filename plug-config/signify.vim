@@ -10,6 +10,6 @@ let g:signify_sign_show_text = 1
 
 " If you like colors instead
 highlight SignColumn ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
-highlight SignifySignAdd ctermfg=0 ctermbg=2
-highlight SignifySignDelete ctermfg=0 ctermbg=2 
-highlight SignifySignChange ctermfg=0 ctermbg=9
+highlight SignifySignAdd ctermfg=2 ctermbg=NONE
+highlight SignifySignDelete ctermfg=1 ctermbg=NONE 
+highlight SignifySignChange ctermfg=9 ctermbg=NONE

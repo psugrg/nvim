@@ -42,7 +42,10 @@ hi clear SpellBad
 hi SpellBad ctermfg=131 cterm=underline
 
 " Change the default line numbers color
-hi LineNr ctermfg=DarkGrey ctermbg=Black cterm=italic
+hi LineNr ctermfg=DarkGrey ctermbg=NONE cterm=italic
+
+" Change the default Vertical Split line settings
+hi VertSplit ctermfg=0 ctermbg=16
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
