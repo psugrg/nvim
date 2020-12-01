@@ -8,7 +8,7 @@ set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes pop-up menu smaller
 set fileencoding=utf-8                  " The encoding written to file
 set ruler              			            " Show the cursor position all the time
-set cmdheight=1                         " More space for displaying messages
+set cmdheight=1                         " More space for displaying messages (COC recommends 2 lines)
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
@@ -24,7 +24,8 @@ set autoindent                          " Good auto indent
 set laststatus=2                        " Always display the status line
 set number                              " Absolute line numbers
 " set relativenumber                    " Relative line numbers 
-" set cursorline                        " Enable highlighting of the current line
+set cursorline                        " Enable highlighting of the current line
+hi CursorLine ctermbg=0 cterm=NONE
 set background=dark                     " tell Vim what the background color looks like
 set showtabline=1                       " Show tabs only when there's more than one active tab
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
