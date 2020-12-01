@@ -36,5 +36,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'unblevable/quick-scope'
     " Floating terminal window
     Plug 'voldikss/vim-floaterm'
+    " Themes
+    Plug 'joshdick/onedark.vim'
+    Plug 'glepnir/oceanic-material'
+    Plug 'sainnhe/sonokai'
+    Plug 'sainnhe/edge'
 
     call plug#end()
