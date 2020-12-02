@@ -14,7 +14,7 @@ sudo apt-get update && \
   python3-pip \
   fzf
 
-sudo add-apt-repository ppa:lazygit-team/release -y \
+sudo add-apt-repository ppa:lazygit-team/release -y && \
   sudo apt-get update && \
   sudo apt-get install -y lazygit
 
