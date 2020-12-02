@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Install dependencies
-sudo add-apt-repository ppa:lazygit-team/release -y \
-  apt-get  update && \
+sudo apt-get  update && \
   apt-get upgrade -y && \
   apt-get install -y \
   software-properties-common \
@@ -13,7 +12,11 @@ sudo add-apt-repository ppa:lazygit-team/release -y \
   xsel \
   python3 \
   python3-pip \
-  fzf \
+  fzf
+
+sudo add-apt-repository ppa:lazygit-team/release -y \
+  apt-get  update && \
+  apt-get install -y \
   lazygit
 
 pip3 install pynvim
