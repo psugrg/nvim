@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Install dependencies
-sudo apt-get  update && \
-  apt-get upgrade -y && \
-  apt-get install -y \
+sudo apt-get update && \
+  sudo apt-get upgrade -y && \
+  sudo apt-get install -y \
   software-properties-common \
   curl \
   git \
@@ -15,9 +15,8 @@ sudo apt-get  update && \
   fzf
 
 sudo add-apt-repository ppa:lazygit-team/release -y \
-  apt-get  update && \
-  apt-get install -y \
-  lazygit
+  sudo apt-get update && \
+  sudo apt-get install -y lazygit
 
 pip3 install pynvim
 
