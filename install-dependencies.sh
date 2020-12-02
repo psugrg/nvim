@@ -1,12 +1,8 @@
 #!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root" 
-   exit 1
-fi
-
 # Install dependencies
-apt-get  update && \
+sudo add-apt-repository ppa:lazygit-team/release -y \
+  apt-get  update && \
   apt-get upgrade -y && \
   apt-get install -y \
   software-properties-common \
@@ -17,11 +13,10 @@ apt-get  update && \
   xsel \
   python3 \
   python3-pip \
-  fzf 
-
-add-apt-repository ppa:lazygit-team/release -y
-apt-get update && apt-get install lazygit
+  fzf \
+  lazygit
 
 pip3 install pynvim
 
+# Install Plug vim plugin manager
 curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
