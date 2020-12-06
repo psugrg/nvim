@@ -30,9 +30,21 @@ let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'ranger' ]
 let g:which_key_map['1'] = [ ':Startify'                  , 'start screen' ]
-let g:which_key_map['rg'] = [ ':Rg'                        , 'search text' ]
+let g:which_key_map['rg'] = [ ':Rg'                       , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 "let g:which_key_map['z'] = [ 'Goyo'                      , 'zen' ]
+
+" Development
+let g:which_key_map['d'] = {
+      \ 'name' : '+development' ,
+      \ 'i' : [':CMakeInfo'                     , 'Info'],
+      \ 'c' : [':CMake'                         , 'Configure project'],
+      \ 'C' : [':CMakeClean'                    , 'Clean project'],
+      \ 'tr' : [':CMakeSelectTarget Release'    , 'Select Release target'],
+      \ 'td' : [':CMakeSelectTarget Debug'      , 'Select Debug target'],
+      \ 'b' : [':CMakeBuild'                    , 'Build project'],
+      \ 'f' : [':FZFCMakeSelectTarget'          , 'FXF Select target'],
+      \ }
 
 " Spell check
 let g:which_key_map['sc'] = {
