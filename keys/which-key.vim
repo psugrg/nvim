@@ -39,7 +39,7 @@ let g:which_key_map['d'] = {
       \ 'name' : '+development' ,
       \ 'i' : [':CMakeInfo'                     , 'Info'],
       \ 'c' : [':CMake'                         , 'Configure project'],
-      \ 'rr' : [':CMakeReset'                   , 'Reset project'],
+      \ 'Q' : [':CMakeReset'                   , 'Reset project'],
       \ 'C' : [':CMakeClean'                    , 'Clean project'],
       \ 'R' : [':CMakeSelectBuildType Release'  , 'Build type Release'],
       \ 'D' : [':CMakeSelectBuildType Debug'    , 'Build type Debug'],
@@ -65,7 +65,7 @@ let g:which_key_map.t = {
       \ 'g' : [':FloatermNew lazygit'                           , 'lazygit'],
       \ 'p' : [':FloatermNew python3'                           , 'python'],
       \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-      \ '`' : [':FloatermToggle'                                , 'toggle'],
+      \ ' ' : [':FloatermToggle'                                , 'toggle'],
       \ 'y' : [':FloatermNew bottom'                            , 'bottom system monitor'],
       \ }
 
