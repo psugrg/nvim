@@ -39,9 +39,10 @@ let g:which_key_map['d'] = {
       \ 'name' : '+development' ,
       \ 'i' : [':CMakeInfo'                     , 'Info'],
       \ 'c' : [':CMake'                         , 'Configure project'],
+      \ 'rr' : [':CMakeReset'                   , 'Reset project'],
       \ 'C' : [':CMakeClean'                    , 'Clean project'],
-      \ 'tr' : [':CMakeSelectTarget Release'    , 'Select Release target'],
-      \ 'td' : [':CMakeSelectTarget Debug'      , 'Select Debug target'],
+      \ 'R' : [':CMakeSelectBuildType Release'  , 'Build type Release'],
+      \ 'D' : [':CMakeSelectBuildType Debug'    , 'Build type Debug'],
       \ 'b' : [':CMakeBuild'                    , 'Build project'],
       \ 'f' : [':FZFCMakeSelectTarget'          , 'FXF Select target'],
       \ }
