@@ -37,6 +37,9 @@ set formatoptions-=r                    " Stop newline continuation of comments
 set clipboard=unnamedplus               " Copy paste between Vim and everything else
 "set autochdir                          " Your working directory will always be the same as your working directory
 
+" Disable line numbers in terminal
+autocmd TermOpen * set nonu
+
 " Change the default Bad Spelling highlight 
 hi clear SpellBad
 hi SpellBad ctermfg=131 ctermbg=NONE cterm=underline

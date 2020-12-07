@@ -11,10 +11,15 @@ nnoremap <M-l>    :vertical resize +2<CR>
 " I hate escape more than anything else
 inoremap jk <Esc>
 inoremap kj <Esc>
+inoremap ii <Esc>
 " We can't use the same mapping in terminal window
-" since these key are also used for navigation.
+" since these key are also used for navigation
+" in terminal applications such as Ranger. 
+" The navigation will be much slower if these keys are used.
 " We'll use ESC instead
 tnoremap <Esc> <C-\><C-n>
+" We can also use ii to exit insert mode
+tnoremap ii <C-\><C-n>
 
 " Easy CAPS
 inoremap <c-u> <ESC>viwUi
