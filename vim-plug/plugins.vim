@@ -41,6 +41,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'glepnir/oceanic-material'
     Plug 'sainnhe/sonokai'
     Plug 'sainnhe/edge'
+    Plug 'jdsimcoe/abstract.vim'
+    Plug 'ayu-theme/ayu-vim'
     " CMake (build)
     Plug 'tpope/vim-dispatch'
     Plug 'ilyachur/cmake4vim'
