@@ -37,6 +37,7 @@ set formatoptions-=r                    " Stop newline continuation of comments
 set clipboard=unnamedplus               " Copy paste between Vim and everything else
 "set autochdir                          " Your working directory will always be the same as your working directory
 
+" Truecolor support
 if has('nvim') || has('termguicolors')
   set termguicolors
 endif
