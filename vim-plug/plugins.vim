@@ -43,6 +43,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sainnhe/edge'
     Plug 'jdsimcoe/abstract.vim'
     Plug 'ayu-theme/ayu-vim'
+    Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+    Plug 'NLKNguyen/papercolor-theme'
     " CMake (build)
     Plug 'tpope/vim-dispatch'
     Plug 'ilyachur/cmake4vim'

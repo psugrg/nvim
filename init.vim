@@ -17,6 +17,8 @@ source $HOME/.config/nvim/themes/airline.vim
 " source $HOME/.config/nvim/themes/edge.vim
 " source $HOME/.config/nvim/themes/abstract.vim
 source $HOME/.config/nvim/themes/ayu.vim
+" source $HOME/.config/nvim/themes/challenger-deep.vim
+" source $HOME/.config/nvim/themes/papercolor.vim
 " Themes END
 
 " NOTE: Remember to enable "coc" support in "/themes/airline.vim" after you
