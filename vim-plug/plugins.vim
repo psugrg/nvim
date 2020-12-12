@@ -49,5 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " CMake (build)
     Plug 'tpope/vim-dispatch'
     Plug 'ilyachur/cmake4vim'
+    " Stable version of coc
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     call plug#end()

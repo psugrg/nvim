@@ -10,6 +10,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
+source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/themes/airline.vim
 
 "Themes - uncomment one to enable
@@ -19,8 +20,8 @@ source $HOME/.config/nvim/themes/airline.vim
 " source $HOME/.config/nvim/themes/edge.vim
 " source $HOME/.config/nvim/themes/abstract.vim
 " This one is good!:
-" source $HOME/.config/nvim/themes/ayu.vim
-source $HOME/.config/nvim/themes/challenger-deep.vim
+source $HOME/.config/nvim/themes/ayu.vim
+" source $HOME/.config/nvim/themes/challenger-deep.vim
 " source $HOME/.config/nvim/themes/papercolor.vim
 " Themes END
 
