@@ -1,5 +1,5 @@
 " Disable COC extension on startup
-" let g:coc_start_at_startup = v:false
+let g:coc_start_at_startup = v:false
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
