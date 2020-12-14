@@ -35,6 +35,13 @@ let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map[' '] = [ ':NERDTreeToggle'                 , 'nerd tree']
 "let g:which_key_map['z'] = [ 'Goyo'                      , 'zen' ]
 
+" COC
+let g:which_key_map.c = {
+      \ 'name' : '+COC' ,
+      \ 'e' : ['CocEnable'          , 'COC Enable'],
+      \ 'E' : ['CocDisable'         , 'COC Disable'],
+      \}
+
 " Development
 let g:which_key_map['d'] = {
       \ 'name' : '+development' ,
@@ -73,7 +80,7 @@ let g:which_key_map.t = {
       \ }
 
 " Configuration
-let g:which_key_map.c = {
+let g:which_key_map.C = {
       \ 'name' : '+configuration' ,
       \ 'v' : [':e $HOME/.config/nvim/'                           , 'nvim configuration folder'],
       \ 'c' : [':e $HOME/.config/'                                , '.config folder'],
