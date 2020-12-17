@@ -14,7 +14,8 @@ sudo apt-get update && \
   python3-pip \
   fzf \
   clangd \
-  clang-format
+  clang-format \
+  npm
 
 sudo add-apt-repository ppa:lazygit-team/release -y && \
   sudo apt-get update && \
