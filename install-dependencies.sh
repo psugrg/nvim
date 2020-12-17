@@ -12,7 +12,9 @@ sudo apt-get update && \
   xsel \
   python3 \
   python3-pip \
-  fzf
+  fzf \
+  clangd \
+  clang-format
 
 sudo add-apt-repository ppa:lazygit-team/release -y && \
   sudo apt-get update && \
