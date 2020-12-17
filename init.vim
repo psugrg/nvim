@@ -21,8 +21,8 @@ source $HOME/.config/nvim/themes/airline.vim
 " source $HOME/.config/nvim/themes/edge.vim
 " source $HOME/.config/nvim/themes/abstract.vim
 " This one is good!:
-source $HOME/.config/nvim/themes/ayu.vim
-" source $HOME/.config/nvim/themes/challenger-deep.vim
+" source $HOME/.config/nvim/themes/ayu.vim
+source $HOME/.config/nvim/themes/challenger-deep.vim
 " source $HOME/.config/nvim/themes/papercolor.vim
 " Themes END
 
