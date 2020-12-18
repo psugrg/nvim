@@ -39,5 +39,7 @@ endif
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
+" Automatically start COC plugin for the following file types
+autocmd FileType c,cpp,h,hpp,sh,md,py,json CocStart
 
 " TODO: fill the rest of this file!
