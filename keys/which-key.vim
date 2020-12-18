@@ -70,7 +70,7 @@ let g:which_key_map['sc'] = {
 " Terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ 't' : [':FloatermNew --wintype=normal --height=6 fish'       , 'terminal'],
+      \ 't' : [':FloatermNew --wintype=normal --height=6 zsh'       , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'lazygit'],
       \ 'p' : [':FloatermNew python3'                           , 'python'],
