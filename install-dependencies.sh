@@ -13,6 +13,7 @@ sudo apt-get update && \
   python3 \
   python3-pip \
   fzf \
+  cmake \
   clangd \
   clang-format \
   npm
@@ -25,3 +26,8 @@ pip3 install pynvim
 
 # Install Plug vim plugin manager
 curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install plugins
+nvim -c PlugInstall -c qa 
+
+echo "Installation complete!"
