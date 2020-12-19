@@ -42,4 +42,36 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 " Automatically start COC plugin for the following file types
 autocmd FileType c,cpp,h,hpp,sh,md,py,json CocStart
 
+" GoTo code navigation.
+" NOTE: Moved to which-key.vim
+" nmap <silent> gd <Plug>(coc-definition)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+
+" set keywordprg=:call\ CocActionAsync('doHover')
+" augroup VimHelp
+"   autocmd!
+"   autocmd Filetype vim,help setlocal keywordprg=:help
+" augroup END
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Symbol renaming.
+" nmap <leader>rn <Plug>(coc-rename)
+
 " TODO: fill the rest of this file!
