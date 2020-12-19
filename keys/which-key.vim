@@ -38,10 +38,10 @@ let g:which_key_map[' '] = [ ':NERDTreeToggle'                 , 'nerd tree']
 " COC
 let g:which_key_map.c = {
       \ 'name' : '+COC' ,
-      \ 'd' : ['coc-definition'       , 'Go to definition'],
-      \ 't' : ['coc-type-definition'  , 'Go to type definition'],
-      \ 'i' : ['coc-implementation'   , 'Go to implementation'],
-      \ 'r' : ['coc-reference'        , 'Go to reference'],
+      \ 'd' : ['<Plug>(coc-definition)'       , 'Go to definition'],
+      \ 't' : ['<Plug>(coc-type-definition)'  , 'Go to type definition'],
+      \ 'i' : ['<Plug>(coc-implementation)'   , 'Go to implementation'],
+      \ 'r' : ['<Plug>(coc-reference)'        , 'Go to reference'],
       \ 's' : ['CocStart'             , 'Start COC service'],
       \ 'S' : ['CocStop'              , 'Stop COC service'],
       \}
