@@ -42,8 +42,8 @@ let g:which_key_map.c = {
       \ 't' : ['<Plug>(coc-type-definition)'  , 'Go to type definition'],
       \ 'i' : ['<Plug>(coc-implementation)'   , 'Go to implementation'],
       \ 'r' : ['<Plug>(coc-reference)'        , 'Go to reference'],
-      \ 's' : ['CocStart'             , 'Start COC service'],
-      \ 'S' : ['CocStop'              , 'Stop COC service'],
+      \ 'c' : ['CocStart'             , 'Start COC service'],
+      \ 'C' : ['CocStop'              , 'Stop COC service'],
       \}
 
 " Development
@@ -85,7 +85,7 @@ let g:which_key_map['sc'] = {
 " Terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ 't' : [':FloatermNew --wintype=normal --height=6 zsh'       , 'terminal'],
+      \ 't' : [':FloatermNew --wintype=normal --height=6 $SHELL'   , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'lazygit'],
       \ 'p' : [':FloatermNew python3'                           , 'python'],
