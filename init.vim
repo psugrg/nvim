@@ -12,6 +12,7 @@ source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/clang-format.vim
+source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/themes/airline.vim
 
 "Themes - uncomment one to enable
