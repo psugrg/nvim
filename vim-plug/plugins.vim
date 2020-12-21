@@ -53,5 +53,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ilyachur/cmake4vim'
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Debugging
+    Plug 'puremourning/vimspector'
 
     call plug#end()

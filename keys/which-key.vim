@@ -61,6 +61,17 @@ let g:which_key_map['d'] = {
       \ 'k' : [':cp'                            , 'Previous Error/Warning'],
       \ }
 
+" Debug
+let g:which_key_map['D'] = {
+      \ 'name' : '+debug' ,
+      \ 'D' : [':call vimspector#Launch()'      , 'Start debug session'],
+      \ 'd' : [':call vimspector#Reset()'       , 'Stop debug session'],
+      \ 'r' : [':VimspectorReset'               , 'Reset'],
+      \ 'e' : [':VimspectorEval'                , 'Evaluate'],
+      \ 'w' : [':VimspectorWatch'               , 'Watch'],
+      \ 'o' : [':VimspectorShowOutput'          , 'Show output'],
+      \ }
+
 " Spell check
 let g:which_key_map['sc'] = {
       \ 'name' : '+spell check' ,
