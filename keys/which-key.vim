@@ -32,8 +32,16 @@ let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'ranger' ]
 let g:which_key_map['1'] = [ ':Startify'                  , 'start screen' ]
 let g:which_key_map['rg'] = [ ':Rg'                       , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map[' '] = [ ':NERDTreeToggle'                 , 'nerd tree']
+let g:which_key_map[' '] = [ ':NERDTreeToggle'            , 'nerd tree']
 "let g:which_key_map['z'] = [ 'Goyo'                      , 'zen' ]
+
+" Text mod
+let g:which_key_map['2'] = {
+      \ 'name' : '+Presentation' ,
+      \ 'T' : [':.!toilet -w 200 -f standard'       , 'Title big'],
+      \ 't' : [':.!toilet -w 200 -f small'          , 'Title small'],
+      \ 'b' : [':.!toilet -w 200 -f term -F border' , 'Box'],
+      \ }
 
 " COC
 let g:which_key_map.c = {
@@ -44,7 +52,7 @@ let g:which_key_map.c = {
       \ 'r' : ['<Plug>(coc-reference)'        , 'Go to reference'],
       \ 'c' : ['CocStart'             , 'Start COC service'],
       \ 'C' : ['CocStop'              , 'Stop COC service'],
-      \}
+      \ }
 
 " Development
 let g:which_key_map['d'] = {

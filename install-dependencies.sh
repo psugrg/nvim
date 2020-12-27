@@ -16,7 +16,8 @@ sudo apt-get update && \
   cmake \
   clangd \
   clang-format \
-  npm
+  npm \
+  toilet
 
 sudo add-apt-repository ppa:lazygit-team/release -y && \
   sudo apt-get update && \
