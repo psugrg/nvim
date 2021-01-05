@@ -33,6 +33,7 @@ let g:which_key_map['1'] = [ ':Startify'                  , 'start screen' ]
 let g:which_key_map['rg'] = [ ':Rg'                       , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map[' '] = [ ':NERDTreeToggle'            , 'nerd tree']
+let g:which_key_map['?'] = [ ':e $HOME/.config/nvim/cheat-sheet.md'            , 'cheat sheet']
 "let g:which_key_map['z'] = [ 'Goyo'                      , 'zen' ]
 
 " Text mod
