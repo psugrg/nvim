@@ -13,8 +13,5 @@ If you want to build your own nvim configuration I recommend his blog as a start
 ```
 git clone https://github.com/psugrg/nvim ~/.config/nvim
 ```
-3. Run `./install-dependencies.sh` script.
-4. Start *nvim* and run `:PlugInstall` command to install all plugins. 
-5. Exit *nvim*.
-6. Run `./install-coc-plugins.sh` to install coc plugins.
-7. Start *nvim*.
+3. Run `./install.sh` script.
+4. Start *nvim*.
