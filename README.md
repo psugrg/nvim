@@ -54,10 +54,13 @@ Plugins are installed by a plugin manager and configured by a configuration file
 
 #### Adding New Plugin
 
-1. Find your new plugin on github (e.g.: https://github.com/nvim-treesitter/nvim-treesitter)
-1. 
+1. Find your new plugin on github (e.g.: https://github.com/nvim-treesitter/nvim-treesitter).
+1. Add it to the [configuration](./lua/psu/lazy.lua) by extending the list of plugins to be installed.
+1. Create a configuration file in the `after/colors` directory.
 
 #### Telescope
+
+A plugin to fuzzy-find your files!
 
 > ℹ️  Use `:checkhealth telescope` to inspect the plugin
 
