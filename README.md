@@ -1,5 +1,7 @@
 # Neovim configuration
 
+> ⚡ This configuration uses the *lazy.nvim* as a package manager
+
 > ℹ️  Type `:h rtp` for detaile about the `neovim` startup configuration procedure
 
 > ℹ️  Neovim is configured in `lua` language
