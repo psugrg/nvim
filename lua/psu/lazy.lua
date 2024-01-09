@@ -12,7 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+    -- Color Schemes:
     { 'rose-pine/neovim', name = 'rose-pine' },
+    -- Plugins:
+    {
+        'nvim-telescope/telescope.nvim', tag = '0.1.5',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    },
 }
 
 local opts = {
