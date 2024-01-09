@@ -18,8 +18,8 @@
             - [init.lua](./lua/psu/color-scheme/init.lua) - select desired color scheme
             - ... - color scheme configurations (one per file)
 - after
-    plugin - plugins configuration (automatically sourced by *neovim*)
-        - ... - plugin configurations (one per file)
+    - plugin - plugins configuration (automatically sourced by *neovim*)
+    - ... - plugin configurations (one per file)
 
 ## Plugins & Color Schemes
 
