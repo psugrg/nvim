@@ -1,0 +1,2 @@
+require("psu")
+print("hello!")
