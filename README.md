@@ -50,7 +50,12 @@ Remember that only one color-scheme can be active!
 
 ### Plugins
 
-> TODO
+Plugins are installed by a plugin manager and configured by a configuration file. 
+
+#### Adding New Plugin
+
+1. Find your new plugin on github (e.g.: https://github.com/nvim-treesitter/nvim-treesitter)
+1. 
 
 #### Telescope
 
