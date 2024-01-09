@@ -18,5 +18,5 @@ keymap("n", "<C-s>", ":w<CR>", options) -- Save using Ctrl+s
 keymap("i", "<C-s>", ":w<CR>", options) -- Save using Ctrl+s
 
 -- Terminal
-keymap("n", "<leader>t", ":split<CR>:terminal<CR>i", options) -- Open files navigation
+keymap("n", "<leader>t", ":split<CR>:terminal<CR>:set nonu<CR>i", options) -- Open files navigation
 keymap("t", "<Esc>", "<C-\\><C-n>", options) -- Use ESC to escape terminal mode
