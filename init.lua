@@ -1,2 +1,1 @@
 require("psu")
-print("hello!")
