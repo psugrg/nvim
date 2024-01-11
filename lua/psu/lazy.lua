@@ -20,6 +20,16 @@ local plugins = {
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        init = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end,
+        opts = {
+        }
+    }
 }
 
 local opts = {
