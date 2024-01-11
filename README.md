@@ -13,10 +13,6 @@
         - [set.lua](./lua/psu/set.lua) - *neovim* basic configuration (e.g. line numbers, tabs-to-space, tab width etc.)
         - [remap.lua](./lua/psu/remap.lua) - custom key mapping
         - [lazy.lua](./lua/psu/lazy.lua) - **plugin manager configuration**
-        - color-scheme - color schemes cofiguration
-            TODO: shouldn't I move this to `after/colors`?
-            - [init.lua](./lua/psu/color-scheme/init.lua) - select desired color scheme
-            - ... - color scheme configurations (one per file)
 - after
     - plugin - plugins configuration (automatically sourced by *neovim*)
     - ... - plugin configurations (one per file)
@@ -40,13 +36,12 @@ Color schemes are installed by a plugin manager, configured by a configuration f
 1. Find your new scheme on github (e.g.: https://github.com/rose-pine/neovim).
 Make sure that it supports *neovim*. 
 1. Add color scheme to the plugin [configuration](./lua/psu/lazy.lua) by extending the list of plugins to be installed.
-1. Create a color scheme configuration file and add it to the color-scheme (initialization)[./lua/psu/color-scheme/init.lua] file
+1. Opt. Create a color scheme configuration file and add it to the [plugin configuration directory](./after/plugin).
+2. Enable it in the [psu init file](./lua/psu/init.lua) by adding `vim.cmd('colorscheme name-of-the-colorscheme`).
 
 #### Changing Color Scheme
 
-Just comment/uncomment line in the color-scheme (initialization)[./lua/psu/color-scheme/init.lua] file.
-
-Remember that only one color-scheme can be active!
+Simply comment-out the previous colorscheme in the [psu init file](./lua/psu/init.lua) and uncomment the new colorsheme. 
 
 ### Plugins
 
