@@ -13,9 +13,8 @@
         - [set.lua](./lua/psu/set.lua) - *neovim* basic configuration (e.g. line numbers, tabs-to-space, tab width etc.)
         - [remap.lua](./lua/psu/remap.lua) - custom key mapping
         - [lazy.lua](./lua/psu/lazy.lua) - **plugin manager configuration**
-- after
-    - plugin - plugins configuration (automatically sourced by *neovim*)
-    - ... - plugin configurations (one per file)
+        - plugin - plugins configuration
+            - ... - plugin configurations (one per file)
 
 ## Plugins & Color Schemes
 
@@ -36,12 +35,12 @@ Color schemes are installed by a plugin manager, configured by a configuration f
 1. Find your new scheme on github (e.g.: https://github.com/rose-pine/neovim).
 Make sure that it supports *neovim*. 
 1. Add color scheme to the plugin [configuration](./lua/psu/lazy.lua) by extending the list of plugins to be installed.
-1. Opt. Create a color scheme configuration file and add it to the [plugin configuration directory](./after/plugin).
+1. Opt. Create a color scheme configuration file and add it to the [plugin configuration directory](./lua/psu/plugin).
 2. Enable it in the [psu init file](./lua/psu/init.lua) by adding `vim.cmd('colorscheme name-of-the-colorscheme`).
 
 #### Changing Color Scheme
 
-Simply comment-out the previous colorscheme in the [psu init file](./lua/psu/init.lua) and uncomment the new colorsheme. 
+Simply comment-out the previous colorscheme in the [psu module init file](./lua/psu/init.lua) and uncomment the new colorsheme. 
 
 ### Plugins
 
@@ -51,7 +50,8 @@ Plugins are installed by a plugin manager and configured by a configuration file
 
 1. Find your new plugin on github (e.g.: https://github.com/nvim-treesitter/nvim-treesitter).
 1. Add it to the [configuration](./lua/psu/lazy.lua) by extending the list of plugins to be installed.
-1. Create a configuration file in the `after/colors` directory.
+1. Create a configuration file in the `./lua/psu/plugin` directory.
+1. Import new configuration by adding `require("psu.plugin.config-file-name")` to the [psu module init file](./lua/psu/init.lua).
 
 #### Telescope
 
