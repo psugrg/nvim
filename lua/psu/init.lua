@@ -2,7 +2,6 @@ require("psu.set")
 require("psu.remap")
 require("psu.lazy") -- plugin manager
 -- Plugins configuration
-require("psu.plugin.telescope")
 require("psu.plugin.treesitter")
 require("psu.plugin.rose-pine")
 require("psu.plugin.which-key") -- remaps that are triggered by the <leader> key
