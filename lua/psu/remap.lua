@@ -18,6 +18,6 @@ keymap("n", "<C-s>", ":w<CR>", options) -- Save using Ctrl+s
 keymap("i", "<C-s>", ":w<CR>", options) -- Save using Ctrl+s
 
 -- Terminal
-keymap("n", "<leader>t", ":split<CR>:terminal<CR>:set nonu<CR>i", options) -- Open terminal below (horizontal split)
-keymap("n", "<leader>vt", ":vsplit<CR>:terminal<CR>:set nonu<CR>i", options) -- Open terminal aside (vertical split)
+keymap("n", "<leader>tt", ":split<CR>:terminal<CR>:set nonu<CR>i", options) -- Open terminal below (horizontal split, in a new window)
+keymap("n", "<leader>t", ":terminal<CR>:set nonu<CR>i", options) -- Open terminal in the current window
 keymap("t", "<Esc>", "<C-\\><C-n>", options) -- Use ESC to escape terminal mode
