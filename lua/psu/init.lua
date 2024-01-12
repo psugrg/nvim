@@ -4,6 +4,7 @@ require("psu.lazy") -- plugin manager
 -- Plugins configuration
 require("psu.plugin.treesitter")
 require("psu.plugin.rose-pine")
+require("psu.plugin.colorizer")
 require("psu.plugin.which-key") -- remaps that are triggered by the <leader> key
 -- Colorscheme
 -- - Choose your color scheme by uncommenting one of these lines:

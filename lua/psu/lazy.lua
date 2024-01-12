@@ -29,7 +29,8 @@ local plugins = {
         end,
         opts = {
         }
-    }
+    },
+    {'norcalli/nvim-colorizer.lua', name = 'colorizer' },
 }
 
 local opts = {
