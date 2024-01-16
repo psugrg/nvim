@@ -1,8 +1,8 @@
 # Neovim Configuration
 
-> ℹ️  Type `:h rtp` for detaile about the `neovim` startup configuration procedure
+This neovim is configured in `lua`.
 
-> ℹ️  Neovim is configured in `lua` language
+> ℹ️  Type `:h rtp` for detaile about the `neovim` startup configuration procedure
 
 ## Structure
 
@@ -13,7 +13,7 @@
         - [set.lua](./lua/psu/set.lua) - *neovim* basic configuration (e.g. line numbers, tabs-to-space, tab width etc.)
         - [remap.lua](./lua/psu/remap.lua) - custom key mapping
         - [lazy.lua](./lua/psu/lazy.lua) - **plugin manager configuration**
-        - plugin - plugins configuration
+        - plugin - plugins (and colorschemes) configuration
             - ... - plugin configurations (one per file)
 
 ## Plugins & Color Schemes
