@@ -18,6 +18,8 @@ This neovim is configured in `lua`.
 
 ## Plugins & Color Schemes
 
+It's inspired by [youtube video](https://youtu.be/6mxWayq-s9I?si=wi8LI_XdteKljoIE) from Josean Martinez.
+
 > ⚡ This configuration uses the [*lazy.nvim*](https://github.com/folke/lazy.nvim) as a package manager
 
 > ℹ️  Use `:Lazy` to spawn *lazy.nvim* plugin manager UI
