@@ -13,7 +13,7 @@ This neovim is configured in `lua`.
         - [set.lua](./lua/psu/set.lua) - *neovim* basic configuration (e.g. line numbers, tabs-to-space, tab width etc.)
         - [remap.lua](./lua/psu/remap.lua) - custom key mapping
         - [lazy.lua](./lua/psu/lazy.lua) - **plugin manager configuration**
-        - plugin - plugins (and colorschemes) configuration
+        - plugins - plugins (and colorschemes) configuration
             - ... - plugin configurations (one per file)
 
 ## Plugins & Color Schemes
@@ -26,32 +26,28 @@ This neovim is configured in `lua`.
 
 > ℹ️  Use `:checkhealth <name_of_plugin>` to inspect the plugin
 
-### Color Schemes
-
-Color schemes are installed by a plugin manager, configured by a configuration file and selected by the color-scheme init file.
-
-#### Adding New Scheme
-
-1. Find your new scheme on github (e.g.: https://github.com/rose-pine/neovim).
-Make sure that it supports *neovim*. 
-1. Add color scheme to the plugin [configuration](./lua/psu/lazy.lua) by extending the list of plugins to be installed.
-1. Opt. Create a color scheme configuration file and add it to the [plugin configuration directory](./lua/psu/plugin).
-2. Enable it in the [psu init file](./lua/psu/init.lua) by adding `vim.cmd('colorscheme name-of-the-colorscheme`).
-
-#### Changing Color Scheme
-
-Simply comment-out the previous colorscheme in the [psu module init file](./lua/psu/init.lua) and uncomment the new colorsheme. 
-
-### Plugins
-
-Plugins are installed by a plugin manager and configured by a configuration file. 
-
-#### Adding New Plugin
+### Adding New Plugin
 
 1. Find your new plugin on github (e.g.: https://github.com/nvim-treesitter/nvim-treesitter).
-1. Add it to the [configuration](./lua/psu/lazy.lua) by extending the list of plugins to be installed.
-1. Create a configuration file in the `./lua/psu/plugin` directory.
-1. Import new configuration by adding `require("psu.plugin.config-file-name")` to the [psu module init file](./lua/psu/init.lua).
+1. Create a configuration file in the `./lua/psu/plugin` directory using a following scheme:
+
+```lua
+return {
+    "plugin-name/neovim",
+    config = function() 
+        require('plugin-name').setup({
+            -- Add setup code here (if needed)
+        })
+
+    -- Add extra configuration here (like key-mapping etc.)
+
+    end
+}
+```
+
+> ℹ️  Using `config` is optional and required only of a plugin has a `setup` function that is required to be called
+
+### Extra information about plugins
 
 #### Telescope
 
