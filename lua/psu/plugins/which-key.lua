@@ -18,7 +18,6 @@ return {
       local tb = require('telescope.builtin')
       -- Register custom commands in you own menu
       wk.add({
-          { "<leader>t", "<cmd>terminal<cr><cmd>set nonu<cr>i", desc = "Terminal" },
           { "<leader>f", group = "Find" },
           { "<leader>ff", function() tb.find_files() end, desc = "Find files" },
           { "<leader>fg", function() tb.git_files() end, desc = "Find files in git repository" },

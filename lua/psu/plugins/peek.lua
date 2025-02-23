@@ -20,6 +20,19 @@ return {
             end
         end
 
-        keymap.set("n", "<leader>m", togglePreview, { desc = "Toggle Makrdown preview" })
+        local wk = require("which-key")
+        wk.add({
+            { "<leader>p", function()
+                    local buf = vim.api.nvim_get_current_buf() 
+                    local ft = vim.api.nvim_buf_get_option(buf, "filetype")
+                    if ft == "markdown" then
+                        togglePreview()
+                    else
+                        vim.notify("No preview available for this file!", vim.log.levels.ERR)
+                    end
+                end, desc = "Toggle preview"
+            },
+        })
     end
 }
+
