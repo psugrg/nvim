@@ -49,19 +49,5 @@ return {
 
 > ℹ️  Using `config` is optional and required only of a plugin has a `setup` function that is required to be called
 
-### Extra information about plugins
-
-#### Telescope
-
-A plugin to fuzzy-find your files!
-
-> ℹ️  Use `:checkhealth telescope` to inspect the plugin
-
-Deps:
-
-```sh
-sudo apt install ripgrep fd-find
-```
-
 [^1]: In *lua* folder can also be a module if it contains the `init.lua` file
 

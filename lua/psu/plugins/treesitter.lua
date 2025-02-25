@@ -39,6 +39,7 @@ return {
         "c",
         "cpp",
         "php",
+        "regex",
       },
       incremental_selection = {
         enable = true,
