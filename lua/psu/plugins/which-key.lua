@@ -18,6 +18,11 @@ return {
         -- Register custom commands in you own menu
         wk.add({
             { "<leader>Q", ":qa<CR>" , desc = "Quit" },
+            { "<leader>f", group = "Find file" },
+            { "<leader>s", group = "Search text" },
+            { "<leader>g", group = "Git" },
+            { "<leader>u", group = "Utils" },
+            { "<leader>b", group = "Buffer" },
         })
     end
 }

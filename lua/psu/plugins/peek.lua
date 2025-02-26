@@ -22,7 +22,7 @@ return {
 
         local wk = require("which-key")
         wk.add({
-            { "<leader>p", function()
+            { "<leader>up", function()
                     local buf = vim.api.nvim_get_current_buf() 
                     local ft = vim.api.nvim_buf_get_option(buf, "filetype")
                     if ft == "markdown" then
