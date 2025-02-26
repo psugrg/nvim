@@ -17,7 +17,7 @@ return {
         local wk = require("which-key")
         -- Register custom commands in you own menu
         wk.add({
-            { "<leader>Q", ":qa<CR>" , desc = "Quit" },
+            { "<leader>q", ":qa<CR>" , desc = "Quit" },
             { "<leader>f", group = "Find file" },
             { "<leader>s", group = "Search text" },
             { "<leader>g", group = "Git" },
