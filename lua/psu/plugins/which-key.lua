@@ -23,6 +23,7 @@ return {
             { "<leader>g", group = "Git" },
             { "<leader>u", group = "Utils" },
             { "<leader>b", group = "Buffer" },
+            { "<leader>l", group = "LSP" },
         })
     end
 }
