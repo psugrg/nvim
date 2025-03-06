@@ -33,6 +33,7 @@ return {
 			-- ensure these language parsers are installed
 			ensure_installed = {
 				"bash",
+				"blade",
 				"c",
 				"cpp",
 				"css",
