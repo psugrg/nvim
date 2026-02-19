@@ -5,7 +5,7 @@
 local keymap = vim.api.nvim_set_keymap
 
 -- Options for key mapping
-options = {noremap = true, silent = true}
+options = { noremap = true, silent = true }
 
 -- Navigation
 keymap("i", "jk", "<ESC>", options) -- Exit insert mode using j+k
@@ -17,4 +17,4 @@ keymap("i", "<C-s>", ":w<CR>", options) -- Save using Ctrl+s
 
 -- Bufer manipulation
 keymap("n", "<tab>", ":bn<CR>", options) -- Move to next buffer
-
+keymap("n", "<S-tab>", ":bp<CR>", options) -- Move to previous buffer
