@@ -1,49 +1,52 @@
 return {
-  "williamboman/mason.nvim",
-  dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-  },
-  config = function()
-    -- import mason
-    local mason = require("mason")
-
-    -- import mason-lspconfig
-    local mason_lspconfig = require("mason-lspconfig")
-
-    local mason_tool_installer = require("mason-tool-installer")
-
-    -- enable mason and configure icons
-    mason.setup({
-      ui = {
-        icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗",
-        },
-      },
-    })
-
-    mason_lspconfig.setup({
-      -- list of servers for mason to install
-      ensure_installed = {
-        "svelte",
-        "lua_ls",
-        "clangd",
-        "html",
-        "cssls",
-      },
-    })
-
-    mason_tool_installer.setup({
-      ensure_installed = {
-        "prettier", -- prettier formatter
-        "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
-        "pylint",
-        "cpplint"
-      },
-    })
-  end,
+	{
+		"williamboman/mason-lspconfig.nvim",
+		opts = {
+			-- list of servers for mason to install
+			-- NOTE: only LSP servers, formatters and linters should be installed via the `mason-tool-installer` below
+			ensure_installed = {
+				-- list of servers for mason to install -- use the same name as in `https://github.com/neovim/nvim-lspconfig/tree/master/lsp`
+				"svelte",
+				"lua_ls",
+				"clangd",
+				"html",
+				"cssls",
+			},
+		},
+		dependencies = {
+			{
+				"williamboman/mason.nvim",
+				opts = {
+					ui = {
+						icons = {
+							package_installed = "✓",
+							package_pending = "➜",
+							package_uninstalled = "✗",
+						},
+					},
+				},
+			},
+			"neovim/nvim-lspconfig",
+		},
+	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		opts = {
+			ensure_installed = {
+				-- list of formatters and linters
+				"prettier", -- prettier formatter
+				"stylua", -- lua formatter
+				"isort", -- python formatter
+				"black", -- python formatter
+				"pylint",
+				"eslint_d",
+				"blade-formatter",
+				"markdownlint",
+				"cpplint",
+			},
+		},
+		dependencies = {
+			"williamboman/mason.nvim",
+		},
+	},
 }

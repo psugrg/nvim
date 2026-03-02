@@ -2,7 +2,20 @@
 
 This neovim is configured in `lua`.
 
-> ℹ️ Type `:h rtp` for detaile about the `neovim` startup configuration procedure
+> Type `:h rtp` for detaile about the `neovim` startup configuration procedure
+
+## Dependencies
+
+### Install Deno (needed by neo-vim markdown-preview plugin)
+
+sudo curl -fsSL https://deno.land/install.sh | sh
+
+### Install lazy-git
+
+LAZYGIT*VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]_')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}\_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit -D -t /usr/local/bin/
 
 ## Structure
 
@@ -25,14 +38,14 @@ This neovim is configured in `lua`.
 It's inspired by
 [youtube video](https://youtu.be/6mxWayq-s9I?si=wi8LI_XdteKljoIE) from Josean Martinez.
 
-> ⚡ This configuration uses the
+> This configuration uses the
 > [_lazy.nvim_](https://github.com/folke/lazy.nvim) as a package manager
 >
-> ℹ️ Use `:Lazy` to spawn _lazy.nvim_ plugin manager UI
+> Use `:Lazy` to spawn _lazy.nvim_ plugin manager UI
 >
-> ℹ️ Color schemes are managed also by the package manager
+> Color schemes are managed also by the package manager
 >
-> ℹ️ Use `:checkhealth <name_of_plugin>` to inspect the plugin
+> Use `:checkhealth <name_of_plugin>` to inspect the plugin
 
 ### Adding New Plugin
 
@@ -55,7 +68,24 @@ return {
 }
 ```
 
-> ℹ️ Using `config` is optional and required only of a plugin has a `setup`
+> Using `config` is optional and required only of a plugin has a `setup`
 > function that is required to be called
+
+### LSP plugin
+
+> [Nice video explaining how it works](https://youtu.be/yI9R13h9IEE?si=tnIv6KCxMPc0w1hL)
+> [More sophisticated (but a little bit more bloated)](https://youtu.be/oBiBEx7L000?si=Blz0mCnIZ-cplDVs)
+
+LSP is part of neovim, there is a plugin for getting configuration - check the `lsp.lua` file
+
+Use comamnd `checkhealth vim.lsp` to check the configuration.
+
+#### LSP language servers configuration
+
+The LSP language servers are automatically configured by the [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) plugin.
+
+It is possible to add additional configuration to the language server by adding it to the `/lsp` folder.
+
+> See `./lsp/lua_ls.lua` as an example
 
 [^1]: In _lua_ folder can also be a module if it contains the `init.lua` file
