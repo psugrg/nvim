@@ -86,6 +86,7 @@ The LSP language servers are automatically configured by the [nvim-lspconfig](ht
 
 It is possible to add additional configuration to the language server by adding it to the `/lsp` folder.
 
-> See `./lsp/lua_ls.lua` as an example
+> See `./after/lsp/lua_ls.lua` as an example
+> Note that the `/after` directory means that the configuration in that folder will be run after the original configuration (From github)
 
 [^1]: In _lua_ folder can also be a module if it contains the `init.lua` file

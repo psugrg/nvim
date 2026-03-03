@@ -11,6 +11,9 @@ return {
 				"clangd",
 				"html",
 				"cssls",
+				"intelephense",
+				"ts_ls",
+				"vue_ls",
 			},
 		},
 		dependencies = {
