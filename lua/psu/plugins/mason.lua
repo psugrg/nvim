@@ -14,6 +14,7 @@ return {
 				"intelephense",
 				"ts_ls",
 				"vue_ls",
+				"docker_language_server",
 			},
 		},
 		dependencies = {
@@ -37,6 +38,7 @@ return {
 		opts = {
 			ensure_installed = {
 				-- list of formatters and linters
+				"biome", -- faster than prettier (deal-breaker for json files), but supports less languages `https://biomejs.dev/internals/language-support/`
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				"isort", -- python formatter
