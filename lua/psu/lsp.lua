@@ -1,3 +1,15 @@
+-- Function to toggle virtual text
+local toggle_diagnostics = function()
+	local current_value = vim.diagnostic.config().virtual_text
+	if current_value then
+		vim.diagnostic.config({ virtual_text = false })
+		print("Virtual Text Off")
+	else
+		vim.diagnostic.config({ virtual_text = true })
+		print("Virtual Text On")
+	end
+end
+
 local keymap = vim.keymap -- for conciseness
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -28,11 +40,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		opts.desc = "Smart rename"
 		keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- smart rename
 
-		opts.desc = "Show buffer diagnostics"
-		keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
-
 		opts.desc = "Show line diagnostics"
 		keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
+
+		opts.desc = "Show diagnostics in-line"
+		keymap.set("n", "<leader>D", toggle_diagnostics, opts) -- toggle inline diagnostics
 
 		opts.desc = "Go to previous diagnostic"
 		keymap.set("n", "[d", function()
@@ -52,11 +64,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
--- vim.lsp.inlay_hint.enable(true)
-
 local severity = vim.diagnostic.severity
 
 vim.diagnostic.config({
+	-- Enable inline diagnostic text
+	virtual_text = true,
 	signs = {
 		text = {
 			[severity.ERROR] = " ",
